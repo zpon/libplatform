@@ -1,7 +1,7 @@
 buildarch=4
 
 pkgname=libplatform
-pkgver=1.0.5_20150517
+pkgver=2.0.0_20160120
 pkgrel=1
 pkgdesc="Pulse-Eight's Platform support library used by libCEC and binary add-ons for Kodi"
 arch=('armv7h')
@@ -27,7 +27,7 @@ prepare() {
   else
      git clone --recursive --branch ${_gitbranch} --depth 1 "${_gitroot}/${_gitname}"
   fi
-  
+
   msg2 "GIT checkout done or server timeout." 
 }
 
